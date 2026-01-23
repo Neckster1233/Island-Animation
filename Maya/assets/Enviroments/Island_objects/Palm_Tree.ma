@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Palm_Tree.ma
-//Last modified: Fri, Jan 23, 2026 03:57:12 PM
+//Last modified: Fri, Jan 23, 2026 03:57:42 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -11,12 +11,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "9FF26C71-49CD-2190-2640-048F317730C5";
+fileInfo "UUID" "408D0B46-430C-EF18-A812-2598B896C878";
 createNode transform -s -n "persp";
 	rename -uid "7FF8993C-40AF-6BF0-7794-6A84F1B2C430";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 52.096733282959967 36.10751141947781 5.1383877180437301 ;
-	setAttr ".r" -type "double3" -382.53835336650553 -8179.7999999999465 0 ;
+	setAttr ".t" -type "double3" 47.135212428944541 28.642059633745827 -15.435378359158083 ;
+	setAttr ".r" -type "double3" -375.33835336649867 -8159.3999999998969 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "1B625240-4C35-1C70-F2CD-5F99AD3288DF";
 	setAttr -k off ".v" no;
