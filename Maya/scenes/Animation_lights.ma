@@ -1,21 +1,21 @@
 //Maya ASCII 2025ff03 scene
 //Name: Animation_lights.ma
-//Last modified: Sat, Jan 31, 2026 04:03:51 PM
+//Last modified: Sun, Feb 01, 2026 10:35:19 PM
 //Codeset: 1252
 file -rdi 1 -ns "Island_Anim_One" -rfn "Island_Anim_OneRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/couls/OneDrive - Utah Valley University/Desktop/2024_3D_program_assignments/ani_pro_4_class/Animation-project-one-2026-/Maya//scenes/Island Anim One.ma";
 file -rdi 2 -ns "IslandModel1" -rfn "Island_Anim_One:IslandModelRN" -op "v=0;"
-		 -typ "mayaAscii" "C:/Users/couls/OneDrive - Utah Valley University/Desktop/2024_3D_program_assignments/ani_pro_4_class/Animation-project-one-2026-/Maya//assets/Enviroments/IslandModel.ma";
+		 -typ "mayaAscii" "C:/Users/Enoch Smith/Documents/GitHub Repos/Animation-project-one-2026/Maya//assets/Enviroments/IslandModel.ma";
 file -rdi 2 -ns "Palm_Tree1" -rfn "Island_Anim_One:Palm_TreeRN" -op "v=0;" 
-		-typ "mayaAscii" "C:/Users/couls/OneDrive - Utah Valley University/Desktop/2024_3D_program_assignments/ani_pro_4_class/Animation-project-one-2026-/Maya//assets/Enviroments/Island_objects/Palm_Tree.ma";
+		-typ "mayaAscii" "C:/Users/Enoch Smith/Documents/GitHub Repos/Animation-project-one-2026/Maya//assets/Enviroments/Island_objects/Palm_Tree.ma";
 file -rdi 2 -ns "campfire1" -rfn "Island_Anim_One:campfireRN" -op "v=0;" -typ
-		 "mayaAscii" "C:/Users/couls/OneDrive - Utah Valley University/Desktop/2024_3D_program_assignments/ani_pro_4_class/Animation-project-one-2026-/Maya//assets/Props/campfire.ma";
+		 "mayaAscii" "C:/Users/Enoch Smith/Documents/GitHub Repos/Animation-project-one-2026/Maya//assets/Props/campfire.ma";
 file -rdi 2 -ns "stick1" -rfn "Island_Anim_One:stickRN" -op "v=0;" -typ "mayaAscii"
-		 "C:/Users/couls/OneDrive - Utah Valley University/Desktop/2024_3D_program_assignments/ani_pro_4_class/Animation-project-one-2026-/Maya//assets/Props/stick.ma";
+		 "C:/Users/Enoch Smith/Documents/GitHub Repos/Animation-project-one-2026/Maya//assets/Props/stick.ma";
 file -rdi 2 -ns "coconut" -rfn "Island_Anim_One:coconutRN" -op "v=0;" -typ "mayaAscii"
-		 "C:/Users/couls/OneDrive - Utah Valley University/Desktop/2024_3D_program_assignments/ani_pro_4_class/Animation-project-one-2026-/Maya//assets/Props/coconut.ma";
+		 "C:/Users/Enoch Smith/Documents/GitHub Repos/Animation-project-one-2026/Maya//assets/Props/coconut.ma";
 file -rdi 2 -ns "Island_shrub" -rfn "Island_Anim_One:Island_shrubRN" -op "v=0;"
-		 -typ "mayaAscii" "C:/Users/couls/OneDrive - Utah Valley University/Desktop/2024_3D_program_assignments/ani_pro_4_class/Animation-project-one-2026-/Maya//assets/Enviroments/Island_objects/Island_shrub.ma";
+		 -typ "mayaAscii" "C:/Users/Enoch Smith/Documents/GitHub Repos/Animation-project-one-2026/Maya//assets/Enviroments/Island_objects/Island_shrub.ma";
 file -r -ns "Island_Anim_One" -dr 1 -rfn "Island_Anim_OneRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/couls/OneDrive - Utah Valley University/Desktop/2024_3D_program_assignments/ani_pro_4_class/Animation-project-one-2026-/Maya//scenes/Island Anim One.ma";
 requires maya "2025ff03";
@@ -28,21 +28,22 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "D4AE376F-4D3A-68D1-5190-518CF92EEABA";
+fileInfo "UUID" "56BE02FF-47F4-977D-47E8-0AA07C95D033";
 createNode transform -s -n "persp";
 	rename -uid "CF438AF3-45D0-CBB2-AB14-32B1533BB42A";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 944.62241176604175 2200.8552531125706 -3298.4523024429586 ;
-	setAttr ".r" -type "double3" -29.138352730336894 -1277.0000000000312 0 ;
+	setAttr ".t" -type "double3" 99.419937326024098 1030.5072592650256 -3538.417673011224 ;
+	setAttr ".r" -type "double3" -18.338352729375515 -2339.4000000007418 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "19BD0362-4AE4-147B-7C97-FEBD9C509FB0";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 3719.0873640629047;
+	setAttr ".ncp" 20;
+	setAttr ".coi" 3272.2567094443716;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -5.124786376953125 389.95664501190186 -191.96919250488281 ;
+	setAttr ".tp" -type "double3" -202.0158472805623 -14.199043971040526 -874.16712975851135 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "C15510BE-42D6-AC4C-4FBA-8BB8A82E8D37";
@@ -92,21 +93,21 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "D32E7377-4756-09B4-FA33-9D9DBA72E14D";
-	setAttr -s 41 ".lnk";
-	setAttr -s 41 ".slnk";
+	rename -uid "170339D2-4363-8431-992B-BA80A751CF9A";
+	setAttr -s 50 ".lnk";
+	setAttr -s 50 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "04C9B252-4778-DBCB-98E5-0787EB84CC8A";
+	rename -uid "AD37F187-4341-8496-B960-0AA9320E5FFC";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 1 0 ;
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "6CD90017-44D2-A64D-98E7-2FA963D8917D";
+	rename -uid "94F75266-4359-9245-5611-4A90DC355126";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "091F3643-4201-EAAC-B034-7A96523AB442";
+	rename -uid "9CB97735-4B5D-8AFD-134E-CCBF1137318F";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "81A296BE-4C72-B27A-45BD-0286F110927D";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "7DD2E050-4C6C-66AC-5987-928D2843F8B5";
+	rename -uid "766E746B-48A5-52E3-A996-3A99B645C8D4";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "FADEE0BD-4160-0C42-3104-CB916F14E5F6";
 	setAttr ".g" yes;
@@ -116,14 +117,14 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 555\n            -height 351\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n"
 		+ "            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n"
-		+ "            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 555\n            -height 350\n            -sceneRenderFilter 0\n"
+		+ "            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n"
 		+ "            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n"
 		+ "            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n"
 		+ "            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n"
-		+ "            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 555\n            -height 350\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n"
+		+ "            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n"
 		+ "            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n"
 		+ "            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n"
 		+ "            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1117\n            -height 748\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n"
@@ -166,21 +167,9 @@ createNode reference -n "Island_Anim_OneRN";
 	setAttr ".fn[0]" -type "string" "C:/Users/couls/OneDrive - Utah Valley University/Desktop/2024_3D_program_assignments/ani_pro_4_class/Animation-project-one-2026-/Maya//scenes/Island Anim One.ma";
 	setAttr -s 2 ".phl";
 	setAttr ".phl[1]" 0;
-	setAttr ".phl[2]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Island_Anim_OneRN"
 		"Island_Anim_One:IslandModelRN" 0
-		"Island_Anim_One:Island_shrubRN" 0
-		"Island_Anim_One:campfireRN" 0
-		"Island_Anim_One:coconutRN" 0
-		"Island_Anim_One:Palm_TreeRN" 0
-		"Island_Anim_OneRN" 0
-		"Island_Anim_One:stickRN" 0
-		"Island_Anim_One:IslandModelRN" 2
-		2 "Island_Anim_One:IslandModel1:file1" "fileTextureName" " -type \"string\" \"C:/Users/couls/OneDrive - Utah Valley University/Desktop/2024_3D_program_assignments/ani_pro_4_class/Animation-project-one-2026-/Maya//assets/Enviroments/Island_textures/Island_FBX_standardSurface1_BaseColor.png\""
-		
-		2 "Island_Anim_One:IslandModel1:file1" "colorSpace" " -type \"string\" \"sRGB\""
-		
 		"Island_Anim_One:Island_shrubRN" 6
 		3 "Island_Anim_One:groupId7.message" "Island_Anim_One:Island_shrub:polySurface5SG.groupNodes" 
 		"-na"
@@ -195,7 +184,28 @@ createNode reference -n "Island_Anim_OneRN";
 		5 0 "Island_Anim_OneRN" "|Island_Anim_One:Shrub|Island_Anim_One:ShrubShape.instObjGroups" 
 		"Island_Anim_One:Island_shrub:aiStandardSurface2SG.dagSetMembers" "Island_Anim_OneRN.placeHolderList[1]" 
 		"Island_Anim_OneRN.placeHolderList[2]" ""
-		"Island_Anim_OneRN" 18
+		"Island_Anim_One:campfireRN" 0
+		"Island_Anim_One:coconutRN" 0
+		"Island_Anim_One:Palm_TreeRN" 0
+		"Island_Anim_OneRN" 2
+		3 "Island_Anim_One:groupId7.groupId" "|Island_Anim_One:Shrub|Island_Anim_One:ShrubShape.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 "Island_Anim_One:groupId8.groupId" "|Island_Anim_One:Shrub|Island_Anim_One:ShrubShape.compInstObjGroups.compObjectGroups[1].compObjectGroupId" 
+		""
+		"Island_Anim_One:stickRN" 0
+		"Island_Anim_OneRN" 23
+		2 "|Island_Anim_One:Penny_Flick_Rig:Group" "visibility" " 0"
+		2 "|Island_Anim_One:Penny_Flick_Rig:Group|Island_Anim_One:Penny_Flick_Rig:MotionSystem|Island_Anim_One:Penny_Flick_Rig:FKSystem|Island_Anim_One:Penny_Flick_Rig:FKOffsetHead_M|Island_Anim_One:Penny_Flick_Rig:FKGlobalHead_M|Island_Anim_One:Penny_Flick_Rig:CustomOrientFKHead_M|Island_Anim_One:Penny_Flick_Rig:FKExtraHead_M|Island_Anim_One:Penny_Flick_Rig:FKHead_M" 
+		"rotate" " -type \"double3\" 35.61787430315617797 0 0"
+		2 "|Island_Anim_One:Penny_Flick_Rig:Group|Island_Anim_One:Penny_Flick_Rig:MotionSystem|Island_Anim_One:Penny_Flick_Rig:FKSystem|Island_Anim_One:Penny_Flick_Rig:FKOffsetHead_M|Island_Anim_One:Penny_Flick_Rig:FKGlobalHead_M|Island_Anim_One:Penny_Flick_Rig:CustomOrientFKHead_M|Island_Anim_One:Penny_Flick_Rig:FKExtraHead_M|Island_Anim_One:Penny_Flick_Rig:FKHead_M" 
+		"rotateX" " -av"
+		2 "|Island_Anim_One:Penny_Flick_Rig:Group|Island_Anim_One:Penny_Flick_Rig:MotionSystem|Island_Anim_One:Penny_Flick_Rig:FKSystem|Island_Anim_One:Penny_Flick_Rig:FKOffsetHead_M|Island_Anim_One:Penny_Flick_Rig:FKGlobalHead_M|Island_Anim_One:Penny_Flick_Rig:CustomOrientFKHead_M|Island_Anim_One:Penny_Flick_Rig:FKExtraHead_M|Island_Anim_One:Penny_Flick_Rig:FKHead_M" 
+		"rotateY" " -av"
+		2 "|Island_Anim_One:Penny_Flick_Rig:Group|Island_Anim_One:Penny_Flick_Rig:MotionSystem|Island_Anim_One:Penny_Flick_Rig:FKSystem|Island_Anim_One:Penny_Flick_Rig:FKOffsetHead_M|Island_Anim_One:Penny_Flick_Rig:FKGlobalHead_M|Island_Anim_One:Penny_Flick_Rig:CustomOrientFKHead_M|Island_Anim_One:Penny_Flick_Rig:FKExtraHead_M|Island_Anim_One:Penny_Flick_Rig:FKHead_M" 
+		"rotateZ" " -av"
+		2 "|Island_Anim_One:chicken_rig:Group" "visibility" " 0"
+		2 "|Island_Anim_One:Penny_Flick_Rig1:Group|Island_Anim_One:Penny_Flick_Rig1:MotionSystem|Island_Anim_One:Penny_Flick_Rig1:FKSystem|Island_Anim_One:Penny_Flick_Rig1:FKOffsetBreastR_R|Island_Anim_One:Penny_Flick_Rig1:FKExtraBreastR_R|Island_Anim_One:Penny_Flick_Rig1:FKBreastR_R" 
+		"translate" " -type \"double3\" 0 0 0"
 		2 "Island_Anim_One:Penny_Flick_Rig:file1" "fileTextureName" " -type \"string\" \"C:/Users/couls/OneDrive - Utah Valley University/Desktop/2024_3D_program_assignments/ani_pro_4_class/Animation-project-one-2026-/Maya//assets/Characters/Penny Textures/10 - Default_Base_color.png\""
 		
 		2 "Island_Anim_One:Penny_Flick_Rig:file1" "colorSpace" " -type \"string\" \"sRGB\""
@@ -228,16 +238,18 @@ createNode reference -n "Island_Anim_OneRN";
 		
 		2 "Island_Anim_One:chicken_rig:file1" "colorSpace" " -type \"string\" \"sRGB\""
 		
-		3 "Island_Anim_One:groupId7.groupId" "|Island_Anim_One:Shrub|Island_Anim_One:ShrubShape.instObjGroups.objectGroups[0].objectGroupId" 
-		""
-		3 "Island_Anim_One:groupId8.groupId" "|Island_Anim_One:Shrub|Island_Anim_One:ShrubShape.compInstObjGroups.compObjectGroups[1].compObjectGroupId" 
-		""
 		"Island_Anim_One:Palm_TreeRN" 1
-		2 "|Island_Anim_One:Palm_Tree1:Palm_Tree" "translate" " -type \"double3\" 0 0 0";
+		2 "|Island_Anim_One:Palm_Tree1:Palm_Tree" "translate" " -type \"double3\" 0 0 0"
+		
+		"Island_Anim_One:IslandModelRN" 2
+		2 "Island_Anim_One:IslandModel1:file1" "fileTextureName" " -type \"string\" \"C:/Users/couls/OneDrive - Utah Valley University/Desktop/2024_3D_program_assignments/ani_pro_4_class/Animation-project-one-2026-/Maya//assets/Enviroments/Island_textures/Island_FBX_standardSurface1_BaseColor.png\""
+		
+		2 "Island_Anim_One:IslandModel1:file1" "colorSpace" " -type \"string\" \"sRGB\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode aiOptions -s -n "defaultArnoldRenderOptions";
 	rename -uid "1B30FF20-45CF-5492-4D5D-8B971E8179D6";
+	addAttr -ci true -sn "ARV_options" -ln "ARV_options" -dt "string";
 	setAttr ".version" -type "string" "5.4.8.2";
 createNode aiAOVFilter -s -n "defaultArnoldFilter";
 	rename -uid "C4FC5631-4119-6A63-B1D4-2182D42C2D62";
@@ -255,11 +267,20 @@ createNode reference -n "sharedReferenceNode";
 	rename -uid "B7DB9B07-4927-863E-DB5F-F7B57BA66A38";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"sharedReferenceNode";
+createNode groupId -n "Island_Anim_One:groupId31";
+	rename -uid "4D009FB3-4997-3A25-C40E-B69EC48F763A";
+	setAttr ".ihi" 0;
+createNode groupId -n "Island_Anim_One:groupId32";
+	rename -uid "BDCE90FB-4A74-A7C7-8A97-9A8FB695C155";
+	setAttr ".ihi" 0;
+createNode groupId -n "Island_Anim_One:groupId33";
+	rename -uid "43877DAF-4354-180C-43D1-BE92DD73AE31";
+	setAttr ".ihi" 0;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "6810469C-4D1F-BD0F-C82B-6DB62341975A";
+	rename -uid "197FA4A3-4F29-58B0-FC33-C4BA957C3965";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -44.047617297323995 -676.39357210515413 ;
-	setAttr ".tgi[0].vh" -type "double2" 679.76187775059464 120.44121324433499 ;
+	setAttr ".tgi[0].vl" -type "double2" -44.047617297323995 -751.79867142490616 ;
+	setAttr ".tgi[0].vh" -type "double2" 844.40689285321116 226.2921988001637 ;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -av -cb on ".ihi";
@@ -296,7 +317,7 @@ select -ne :renderPartition;
 	setAttr -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 41 ".st";
+	setAttr -s 50 ".st";
 	setAttr -cb on ".an";
 	setAttr -cb on ".pt";
 select -ne :renderGlobalsList1;
@@ -309,7 +330,7 @@ select -ne :defaultShaderList1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 39 ".s";
+	setAttr -s 48 ".s";
 select -ne :postProcessList1;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -317,12 +338,12 @@ select -ne :postProcessList1;
 	setAttr -cb on ".bnm";
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 49 ".u";
+	setAttr -s 57 ".u";
 select -ne :defaultRenderingList1;
 	setAttr -k on ".ihi";
 	setAttr -s 8 ".r";
 select -ne :defaultTextureList1;
-	setAttr -s 40 ".tx";
+	setAttr -s 46 ".tx";
 select -ne :standardSurface1;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
@@ -335,7 +356,7 @@ select -ne :initialShadingGroup;
 	setAttr -k on ".vwm";
 	setAttr -k on ".tpv";
 	setAttr -k on ".uit";
-	setAttr -s 18 ".dsm";
+	setAttr -s 12 ".dsm";
 	setAttr -k on ".mwc";
 	setAttr -cb on ".an";
 	setAttr -cb on ".il";
@@ -344,7 +365,7 @@ select -ne :initialShadingGroup;
 	setAttr -cb on ".fo";
 	setAttr -cb on ".epo";
 	setAttr -k on ".ro" yes;
-	setAttr -s 13 ".gn";
+	setAttr -s 7 ".gn";
 select -ne :initialParticleSE;
 	setAttr -av -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -359,7 +380,6 @@ select -ne :initialParticleSE;
 	setAttr -cb on ".epo";
 	setAttr -k on ".ro" yes;
 select -ne :initialMaterialInfo;
-	setAttr -s 2 ".t";
 select -ne :defaultRenderGlobals;
 	addAttr -ci true -h true -sn "dss" -ln "defaultSurfaceShader" -dt "string";
 	setAttr -av -k on ".cch";
@@ -374,7 +394,7 @@ select -ne :defaultRenderGlobals;
 	setAttr -av -k on ".clip";
 	setAttr -av -k on ".edm";
 	setAttr -av -k on ".edl";
-	setAttr -av ".ren";
+	setAttr -av ".ren" -type "string" "arnold";
 	setAttr -av -k on ".esr";
 	setAttr -av -k on ".ors";
 	setAttr -cb on ".sdf";
@@ -527,14 +547,14 @@ select -ne :hardwareRenderGlobals;
 	setAttr -k on ".shml";
 	setAttr -k on ".hwel";
 select -ne :ikSystem;
-	setAttr -s 7 ".sol";
-connectAttr "Island_Anim_OneRN.phl[1]" "Island_Anim_OneRN.phl[2]";
+	setAttr -s 9 ".sol";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
+connectAttr "Island_Anim_OneRN.phl[1]" "Island_Anim_OneRN.phl[2]";
 connectAttr "sharedReferenceNode.sr" "Island_Anim_OneRN.sr";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 // End of Animation_lights.ma
